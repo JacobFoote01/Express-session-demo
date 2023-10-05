@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Profile Page
+{% endblock %}
+
+{% block content %}
+<h1>Welcome to your profile page!</h1>
+<form>
+    <label>How are you feeling today?</label>
+    <input type="radio" name="emotions">Happy
+    <input type="radio" name="emotions">Sad
+    <input type="radio" name="emotions">Depressed
+    <input type="radio" name="emotions">Elated
+</form>
+    <label>Please describe your feelings.</label>
+    <input type="text" name="description">
+    <input type="submit">
+{% endblock %}
